@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog — James Jethro Dizon</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+<link rel="icon" href="images/logo.png">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="top-navbar">
+    <a href="index.html" class="logo-wraper"><img src="images/logo.png" alt="logo" class="mylogo" /></a>
+    <nav class="nav-mnu">
+      <a href="index.html" class="nav-item">home</a>
+      <a href="about.html" class="nav-item">about</a>
+      <a href="projects.html" class="nav-item">projects</a>
+      <a href="blog.html" class="nav-item active">blog</a>
+      <a href="contact.html" class="nav-item">contact</a>
+    </nav>
+    <button class="hamburgr" id="hamburgr" aria-label="menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="mobi-menu" id="mobiMenu">
+    <a href="index.html">home</a>
+    <a href="about.html">about</a>
+    <a href="projects.html">projects</a>
+    <a href="blog.html">blog</a>
+    <a href="contact.html">contact</a>
+  </div>
+
+  <main>
+    <div class="inrpage-header">
+      <p class="small-title">— blog</p>
+      <h1>My dev<br><em>journal</em></h1>
+      <p>Just writing down things I'm learning and figuring out as I go. Nothing expert-level as of now just honest notes from a student.</p>
+    </div>
+      <!-- Testimonials -->
+      <div class="testimonials-area fadein">
+        <h2>what are the people's feedback on me</h2>
+        <div class="testimonials-list">
+
+          <blockquote class="testi-blok">
+            <div class="star-ratng">★★★★★</div>
+            <p class="testi-txt">"His problem-solving skills and creativity set him apart. James brings fresh ideas and innovation to every project."</p>
+            <footer class="testi-persn">
+              <div class="testi-avtr avatar-blue">CG</div>
+              <div>
+                <p class="testi-nm">Cheyanby Guiao</p>
+                <p class="testi-positon">Web Development Student</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testi-blok">
+            <div class="star-ratng">★★★★★</div>
+            <p class="testi-txt">"Jethro is one among the dedicated students in our web dev class. He asks good questions, takes feedback seriously, and I can see clear improvement week to week."</p>
+            <footer class="testi-persn">
+              <div class="testi-avtr avatar-gray">JY</div>
+              <div>
+                <p class="testi-nm">Jan Yamzon</p>
+                <p class="testi-positon">Classmate</p>
+              </div>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testi-blok">
+            <div class="star-ratng">★★★★</div>
+            <p class="testi-txt">"We worked together on a school group project and Jethro colunteered to take care of all the front-end. He stayed late fixing bugs and made sure it worked on mobile before we submitted. Solid teammate."</p>
+            <footer class="testi-persn">
+              <div class="testi-avtr avatar-light">RC</div>
+              <div>
+                <p class="testi-nm">Rafael Cruz</p>
+                <p class="testi-positon">Classmate</p>
+              </div>
+            </footer>
+          </blockquote>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <span>made by james jethro dizon · 2025</span>
+    <div class="footer-navlinks">
+      <a href="index.html">home</a>
+      <a href="about.html">about</a>
+      <a href="projects.html">projects</a>
+      <a href="blog.html">blog</a>
+      <a href="contact.html">contact</a>
+    </div>
+  </footer>
+
+  <script src="nav.js"></script>
+  <script>
+    function togglePost(id, btn) {
+      var el = document.getElementById(id);
+      var open = el.classList.toggle('open');
+      btn.textContent = open ? 'close ✕' : 'read more';
+    }
+  </script>
+  
+</body>
+</html>
